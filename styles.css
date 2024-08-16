@@ -1,0 +1,180 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+
+:root {
+    --font-oswald: 'Oswald', sans-serif;
+    --font-source-sans: 'Source Sans Pro', sans-serif;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-gray: #f2f2f2;
+    --padding-section: 60px;
+    --padding-small: 30px;
+    --font-size-h1: 24px;
+    --font-size-h2: 70px;
+    --font-size-h3: 14px;
+    --font-size-p: 14px;
+    --line-height-p: 24px;
+    --letter-spacing-h2: 10px;
+    --letter-spacing-h3: 8px;
+    --overlay-opacity: 0.7;
+}
+
+#main {
+    width: 100%;
+    padding: 0;
+}
+
+
+.margin-top-10 {
+    padding-top: 10px;
+}
+
+#parallax-gfg h1 {
+    font-family: var(--font-oswald);
+    font-size: var(--font-size-h1);
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--color-black);
+    padding: 0;
+    margin: 0;
+}
+
+#parallax-gfg h2 {
+    font-family: var(--font-oswald);
+    font-size: var(--font-size-h2);
+    letter-spacing: var(--letter-spacing-h2);
+    text-align: center;
+
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--color-white);
+    z-index: 10;
+    opacity: 0.9;
+}
+
+#parallax-gfg h3 {
+    font-family: var(--font-oswald);
+    font-size: var(--font-size-h3);
+    letter-spacing: var(--letter-spacing-h3);
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--color-black);
+}
+
+#parallax-gfg p {
+    font-family: var(--font-source-sans);
+    font-weight: 400;
+    font-size: var(--font-size-p);
+    line-height: var(--line-height-p);
+}
+
+.first-character {
+    font-weight: 400;
+    float: left;
+    font-size: 84px;
+    line-height: 64px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+    font-family: var(--font-source-sans);
+
+}
+
+
+#parallax-gfg .title {
+    background: var(--color-white);
+    padding: var(--padding-section);
+    margin: 0 auto;
+    text-align: center;
+}
+
+#parallax-gfg .title h1 {
+    font-size: 35px;
+    letter-spacing: var(--letter-spacing-h3);
+}
+
+
+#parallax-gfg .block {
+    background: var(--color-white);
+    padding: var(--padding-section);
+    width: 820px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+
+#parallax-gfg .parallax-one,
+#parallax-gfg .parallax-two,
+#parallax-gfg .parallax-three {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+#parallax-gfg .parallax-one {
+    background-image: url('https://plus.unsplash.com/premium_photo-1663100722417-6e36673fe0ed?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+
+}
+
+
+#parallax-gfg .parallax-two {
+    background-image: url('https://images.unsplash.com/photo-1518773553398-650c184e0bb3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+
+}
+
+#parallax-gfg .parallax-three {
+    background-image: url('https://plus.unsplash.com/premium_photo-1683121696175-d05600fefb85?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+
+}
+
+
+#parallax-gfg .line-break {
+    border-bottom: 1px solid var(--color-black);
+    width: 150px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 959px) and (min-width: 768px) {
+    #parallax-gfg .block {
+        padding: 40px;
+        width: 620px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #parallax-gfg .block {
+        padding: var(--padding-small);
+        width: 420px;
+    }
+
+    #parallax-gfg h2 {
+        font-size: 30px;
+    }
+
+    #parallax-gfg .parallax-one,
+    #parallax-gfg .parallax-two,
+    #parallax-gfg .parallax-three {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    #parallax-gfg .block {
+        padding: 30px 15px;
+        width: 290px;
+    }
+
+    #parallax-gfg .title h1 {
+        font-size: 25px;
+        letter-spacing: var(--letter-spacing-h3);
+    }
+}
